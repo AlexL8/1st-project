@@ -1,20 +1,4 @@
 @font-face {
-	font-family: 'Playfair Display-Bold';
-	src: url('../fonts/PlayfairDisplay-Bold.eot');
-	src: local('☺'), url('../fonts/PlayfairDisplay-Bold.woff') format('woff'), url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Playfair Display-Regular';
-	src: url('../fonts/PlayfairDisplay-Regular.eot');
-	src: local('☺'), url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Regular.svg') format('svg');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'PostNoBillsJaffna-Bold';
 	src: url('../fonts/PostNoBillsJaffna-Bold.eot');
 	src: local('☺'), url('../fonts/PostNoBillsJaffna-Bold.woff') format('woff'), url('../fonts/PostNoBillsJaffna-Bold.ttf') format('truetype'), url('../fonts/PostNoBillsJaffna-Bold.svg') format('svg');
@@ -27,7 +11,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	max-width: 1920px;
+	width: 1920px;
 	font-family: 'PT Sans', sans-serif;
 	color: #969696;
 }
@@ -82,7 +66,7 @@ header {
 	padding: 0 15px 0 25px;
 }
 
-.sign__link  {
+.header__link  {
 	color: #969696;
 	text-decoration: none;
 	padding: 0 5px;
@@ -102,6 +86,19 @@ header {
 	align-items: center;
 }
 
+.sub-header__logo {
+	font-family: 'PostNoBillsJaffna-Bold';
+	font-size: 36px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.sub-header__block {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 .sub-header__link:hover {
  background-color: #1F1F1F;
 }
@@ -112,7 +109,11 @@ header {
 	color: #969696;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 31px 20px 30px;
+	padding: 29px 20px 33px;
+}
+.basket {
+	margin-right: 45px;
+	margin-left: 40px;
 }
 
 .container {
@@ -170,8 +171,175 @@ header {
 	margin: 0 auto;
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
+	line-height: 24px;
 	height: 96px;
 	width: 730px;
 	color: #FFFFFF;
 }
+
+.showcase {
+	width: 100%;
+	height: 1330px;
+}
+
+.showcase__row1 {
+	display: grid;
+	grid-template-columns: 1040px 880px;
+	grid-template-rows: 730px;
+}
+
+.showcase__row2 {
+	display: grid;
+	grid-template-columns: 880px 1040px;
+	grid-template-rows: 600px;
+}
+
+.showcase__block1 {
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ash2_b1 {
+	margin: 93px 0 32px;
+}
+
+.showcase__products {
+	width: 880px;
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 90px;
+
+}
+
+.showcase_model {
+	display: flex;
+	flex-direction: column;
+}
+
+.showcase__watches {
+	width: 260px;
+	height: 325px;
+	background: url("../images/product.png") no-repeat center;
+	background-color: #191B1C;
+}
+
+.name {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 24px;
+}
+
+.cost {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700px;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 0px;
+}
+
+.showcase__row1 h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 58px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.showcase__line {
+	display: block;
+	width: 120px;
+	height: 0px;
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+
+.showcase__block2 {
+	width: 100%;
+	background: url("../images/man.png") no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.showcase__catalog {
+	width: 376px;
+	height: 146px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 150px;
+}
+
+.ash2_b2 {
+	margin-bottom: 30px;
+}
+
+.catalog {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF;
+	padding: 10px 30px;
+	border: 1px solid #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.showcase__block3 {
+	background: url("../images/tux.png") no-repeat;
+}
+
+.showcase__block4 {
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.ash2_b4 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+.showcase__text {
+	width: 471px; 
+	height: 173px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.showcase__collection {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: white;
+	padding: 15px 30px;
+	border: 2px solid white;
+	text-decoration: none;
+
+}
+
 
